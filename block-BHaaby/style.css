@@ -1,0 +1,149 @@
+/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
+
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+*:where(:not(iframe, canvas, img, svg, video,ul,ol,dl,dt,dd):not(svg *)) {
+    all: unset;
+    display: revert;
+}
+
+  /* Preferred box-sizing value */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+}
+
+/*
+    Remove list styles (bullets/numbers)
+    in case you use it with normalize.css
+  */
+
+  /* For images to not be able to exceed their container */
+img {
+    max-width: 100%;  }
+
+  /* Removes spacing between cells in tables */
+table {
+    border-collapse: inherit;
+}
+
+  /* Revert the 'white-space' property for textarea elements on Safari */
+textarea {
+    white-space: revert;
+}
+/*fonts css rules
+font-family: 'PT Sans Narrow', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+/* CUSTOM STYLES */
+body{
+    width: 1440px;
+    margin: 0 auto;
+}
+main{
+    background-color: rgb(212,206,167);
+}
+.container{
+    max-width: 1360px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.header{
+    background-color: rgb(230,91,21);
+    padding: 32px 0;
+}
+.nav-list{
+    justify-content: flex-start;
+}
+.nav-list li{
+    list-style-type: none;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 32px;
+    font-size: 20px;
+    
+}
+.list-box{
+    background-color: rgb(36,89,121);
+    width: 27%;
+    height: 500px;
+    margin-top: 60px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 6px 6px 3px 4px rgb(131,124,100);
+
+}
+.ordered-list{
+    list-style-position: outside;
+    list-style-type: decimal;
+}
+.ordered-list li{
+    font-size: 22px;
+    color: rgb(212,206,167);
+    font-family: 'Ubuntu', sans-serif;
+    padding: 8px 0;
+    text-decoration: none;
+}
+.unordered-list {
+    color: rgb(212,206,167);
+    font-size: 22px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.unordered-list li{
+    padding: 4px 0;
+}
+.tick-icon {
+    font-size: 22px;
+    color: rgb(212,206,167);
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    list-style-image: url(assets/accept21.png);
+}
+.tick-icon li{
+    padding: 10px 0;
+}
+.heading-title{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+.para{
+    padding: 40px 0;
+}
+.passage{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color: rgb(104,100,79);
+    word-spacing: 8px;
+}
+.footer{
+    background-color: rgb(37,44,34);
+    height: 120px;
+    width: 1440px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px 0;
+}
+.nav-footer{
+    max-width: 1360px;
+}
+.footer-link{
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    list-style-type: none;
+}
+.footer-link li{
+    padding-left: 32px;
+}
